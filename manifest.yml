@@ -1,0 +1,12 @@
+---
+applications:
+- name: budget-app
+  instances: 1
+  memory: 64M
+  host: budgetapp
+  path: build/
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
+  env:
+    NODE_ENV: production
+    PUSH_STATE: true
+    FORCE_HTTPS: true
