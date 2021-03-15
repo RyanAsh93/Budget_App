@@ -321,3 +321,21 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 28rem;
   }
 }
+
+@media all and (max-width: 380px) {
+  html {
+    font-size: 30%;
+  }
+
+  .app-wrapper {
+    grid-gap: 0;
+  }
+
+  .transaction-list {
+    max-height: 29rem;
+  }
+
+  .transaction {
+    width: 28rem;
+  }
+}
